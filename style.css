@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer-container {
+    border: 2px solid black;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+.hour-hand, .mins-hand, .second-hand {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: bottom;
+    transform: translateX(-50%) translateY(-100%) rotate(0deg);
+    background-color: black;
+}
+
+.hour-hand {
+    height: 150px;
+    width: 7px;
+    background-color: darkgreen;
+}
+
+.mins-hand {
+    height: 200px;
+    width: 5px;
+    background-color: darkred;
+}
+
+.second-hand {
+    height: 220px;
+    width: 3px;
+    background-color: red;
+}
+
+/* Position hour numbers around the clock */
+.clock-number {
+    position: absolute;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#number1 { top: 10%; left: 75%; transform: translateX(-50%); }
+#number2 { top: 27%; left: 90%; transform: translateX(-50%); }
+#number3 { top: 45%; left: 95%; transform: translateX(-50%); }
+#number4 { top: 70%; left: 90%; transform: translateY(-50%); }
+#number5 { top: 85%; left: 75%; transform: translateX(-50%); }
+#number6 { top: 90%; left: 50%; transform: translateX(-50%); }
+#number7 { top: 85%; left: 25%; transform: translateX(-50%); }
+#number8 { top: 65%; left: 10%; transform: translateX(-50%); }
+#number9 { top: 45%; left: 5%; transform: translateX(-50%); }
+#number10 { top: 30%; left: 10%; transform: translateY(-50%); }
+#number11 { top: 10%; left: 25%; transform: translateX(-50%); }
+#number12 { top: 5%; left: 50%; transform: translateX(-50%); }
